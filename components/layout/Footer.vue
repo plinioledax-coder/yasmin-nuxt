@@ -1,0 +1,106 @@
+<script setup>
+import { ArrowUp, Instagram, Mail, MapPin, MessageCircle, Linkedin } from 'lucide-vue-next'
+
+const currentYear = new Date().getFullYear()
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+</script>
+
+<template>
+  <footer id="footer" class="bg-[#0C0A08] text-white relative overflow-hidden border-t border-gold/10">
+
+    <div class="absolute top-0 left-0 w-full h-px" style="background: linear-gradient(to right, transparent, #C9A84C50, transparent);"></div>
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
+      style="background-image: repeating-linear-gradient(0deg, transparent, transparent 60px, #C9A84C 60px, #C9A84C 61px);">
+    </div>
+
+    <div class="container mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+
+        <!-- Brand -->
+        <div class="md:col-span-5 space-y-6">
+          <a href="#" @click.prevent="scrollToTop" class="inline-block group">
+            <span class="font-display text-2xl font-bold tracking-[0.1em] uppercase text-white">Yasmin Santana</span>
+            <span class="block text-[9px] tracking-[0.4em] uppercase text-gold/70 mt-1">── Advocacia ──</span>
+          </a>
+
+          <p class="text-sm text-white/40 leading-relaxed max-w-xs">
+            Advocacia humanizada com estratégia e excelência. Cada caso, uma história. Cada cliente, uma prioridade.
+          </p>
+
+          <div class="inline-block px-4 py-2 border border-gold/20 text-[9px] font-bold tracking-[0.35em] uppercase text-gold/60">
+            OAB/BA Nº XXXXX
+          </div>
+
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com/yasminsantana_adv" target="_blank"
+              class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
+              <Instagram class="w-4 h-4" />
+            </a>
+            <a href="https://linkedin.com" target="_blank"
+              class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
+              <Linkedin class="w-4 h-4" />
+            </a>
+            <a href="https://wa.me/557192128914?text=Ol%C3%A1%20Yasmin%2C%20gostaria%20de%20agendar%20uma%20consulta%20e%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os." target="_blank"
+              class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
+              <MessageCircle class="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="md:col-span-3 space-y-5">
+          <h3 class="text-[10px] font-bold uppercase tracking-[0.35em] text-gold">Menu</h3>
+          <ul class="space-y-3 text-sm text-white/40">
+            <li><a href="#sobre" class="hover:text-gold transition-colors">Sobre</a></li>
+            <li><a href="#servicos" class="hover:text-gold transition-colors">Áreas de Atuação</a></li>
+            <li><a href="#depoimentos" class="hover:text-gold transition-colors">Depoimentos</a></li>
+            <li><a href="#contato" class="hover:text-gold transition-colors">Agendar Consulta</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="md:col-span-4 space-y-5">
+          <h3 class="text-[10px] font-bold uppercase tracking-[0.35em] text-gold">Contato</h3>
+          <ul class="space-y-4 text-sm text-white/40">
+            <li class="flex items-start gap-3">
+              <MapPin class="w-4 h-4 text-gold/60 mt-0.5 shrink-0" />
+              <span>Salvador – BA<br>Presencial & Online</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <Mail class="w-4 h-4 text-gold/60 shrink-0" />
+              <a href="mailto:contato@yasminsantana.adv.br" class="hover:text-gold transition-colors">
+                contato@yasminsantana.adv.br
+              </a>
+            </li>
+            <li class="flex items-center gap-3">
+              <MessageCircle class="w-4 h-4 text-gold/60 shrink-0" />
+              <a href="https://wa.me/5571999999999" target="_blank" class="hover:text-gold transition-colors">
+                (71) 99999-9999
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/5">
+      <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-[11px] text-white/25 tracking-wider">
+          © {{ currentYear }} Yasmin Santana Advocacia. Todos os direitos reservados.
+        </p>
+        <button
+          @click="scrollToTop"
+          class="group flex items-center gap-2 text-[10px] uppercase font-bold text-white/25 hover:text-gold transition-colors tracking-widest"
+        >
+          Topo
+          <ArrowUp class="w-3 h-3 group-hover:-translate-y-1 transition-transform" />
+        </button>
+      </div>
+    </div>
+  </footer>
+</template>
