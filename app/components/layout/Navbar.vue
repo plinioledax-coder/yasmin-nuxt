@@ -6,7 +6,8 @@ const isScrolled = ref(false)
 const isMenuOpen = ref(false)
 
 const checkScroll = () => {
-  isScrolled.value = window.scrollY > 20
+  // Passando de 50px para evitar que a animação dispare com qualquer micro-movimento
+  isScrolled.value = window.scrollY > 50
 }
 
 const closeMenu = () => {
@@ -32,26 +33,28 @@ const menuItems = [
 </script>
 
 <template>
-  <nav class="fixed w-full z-50 transition-all duration-500" :class="isScrolled && !isMenuOpen
-    ? 'py-3 bg-white/95 backdrop-blur-md border-b border-gold/20 shadow-sm'
-    : 'py-5 bg-transparent'">
+  <nav 
+    class="fixed w-full z-50 transition-all duration-500 ease-in-out" 
+    :class="isScrolled && !isMenuOpen
+      ? 'py-3 bg-ivory/95 backdrop-blur-md border-b border-gold/30 shadow-sm'
+      : 'py-6 bg-transparent border-b border-transparent'"
+  >
     <div class="container mx-auto px-6 flex justify-between items-center relative">
 
-      <!-- LOGO -->
       <a href="#" class="relative z-50 flex items-center" @click="closeMenu">
-        <span :class="[
-          'text-2xl font-display font-bold tracking-widest transition-all duration-300',
-          isScrolled && !isMenuOpen ? 'text-charcoal' : 'text-white'
-        ]">
-          YS
-        </span>
+        <NuxtImg 
+          src="/images/yasmin-symbol.png" 
+          alt="Yasmin Santana" 
+          width="48"
+          height="48"
+          class="h-10 w-auto object-contain transition-transform duration-500 hover:scale-105" 
+        />
       </a>
 
-      <!-- Desktop menu -->
       <div class="hidden md:flex items-center gap-8">
         <a v-for="item in menuItems" :key="item.label" :href="item.href"
           class="nav-link text-[11px] font-semibold tracking-[0.2em] uppercase transition-colors duration-300"
-          :class="isScrolled ? 'text-charcoal/70 hover:text-gold' : 'text-white/80 hover:text-gold'">
+          :class="isScrolled ? 'text-charcoal hover:text-gold' : 'text-white/80 hover:text-gold'">
           {{ item.label }}
         </a>
 
@@ -64,7 +67,6 @@ const menuItems = [
         </a>
       </div>
 
-      <!-- Mobile hamburger -->
       <button @click="isMenuOpen = !isMenuOpen"
         class="md:hidden z-50 transition-colors duration-300 relative focus:outline-none"
         :class="isMenuOpen ? 'text-gold' : isScrolled ? 'text-charcoal' : 'text-white'">
@@ -73,7 +75,6 @@ const menuItems = [
       </button>
     </div>
 
-    <!-- Mobile fullscreen menu -->
     <Transition name="fade">
       <div v-if="isMenuOpen"
         class="fixed inset-0 bg-charcoal z-40 flex flex-col justify-center items-center w-screen h-screen">
@@ -82,9 +83,9 @@ const menuItems = [
         </div>
 
         <div class="text-center space-y-10 animate-slide-up relative z-10">
-          <!-- Logo no menu mobile -->
-          <img src="/images/logo-circle.png" alt="Yasmin Santana Advocacia"
-            class="h-20 w-20 object-contain mx-auto mb-4 opacity-80" />
+          <NuxtImg src="/images/yasmin-logo.png" alt="Yasmin Santana Advocacia"
+            width="240" 
+            class="w-48 sm:w-56 h-auto object-contain mx-auto mb-8 opacity-90" />
 
           <div class="flex flex-col gap-7">
             <a v-for="item in menuItems" :key="item.label" :href="item.href" @click="closeMenu"
