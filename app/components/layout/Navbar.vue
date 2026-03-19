@@ -24,11 +24,12 @@ onUnmounted(() => {
   document.body.style.overflow = ''
 })
 
+// MUDANÇA 1: Trocamos 'href' por 'to' e colocamos a '/' antes da âncora
 const menuItems = [
-  { label: 'Sobre', href: '#sobre' },
-  { label: 'Áreas de Atuação', href: '#servicos' },
-  { label: 'Depoimentos', href: '#depoimentos' },
-  { label: 'Contato', href: '#contato' },
+  { label: 'Sobre', to: '/#sobre' },
+  { label: 'Áreas de Atuação', to: '/#servicos' },
+  { label: 'Depoimentos', to: '/#depoimentos' },
+  { label: 'Contato', to: '/#contato' },
 ]
 </script>
 
@@ -41,7 +42,7 @@ const menuItems = [
   >
     <div class="container mx-auto px-6 flex justify-between items-center relative">
 
-      <a href="#" class="relative z-50 flex items-center" @click="closeMenu">
+      <NuxtLink to="/" class="relative z-50 flex items-center" @click="closeMenu">
         <NuxtImg 
           src="/images/yasmin-symbol.png" 
           alt="Yasmin Santana" 
@@ -49,22 +50,22 @@ const menuItems = [
           height="48"
           class="h-10 w-auto object-contain transition-transform duration-500 hover:scale-105" 
         />
-      </a>
+      </NuxtLink>
 
       <div class="hidden md:flex items-center gap-8">
-        <a v-for="item in menuItems" :key="item.label" :href="item.href"
+        <NuxtLink v-for="item in menuItems" :key="item.label" :to="item.to"
           class="nav-link text-[11px] font-semibold tracking-[0.2em] uppercase transition-colors duration-300"
           :class="isScrolled ? 'text-charcoal hover:text-gold' : 'text-white/80 hover:text-gold'">
           {{ item.label }}
-        </a>
+        </NuxtLink>
 
-        <a href="#contato"
+        <NuxtLink to="/#contato"
           class="px-6 py-2.5 border text-[10px] font-bold tracking-[0.25em] uppercase transition-all duration-300 hover:shadow-md"
           :class="isScrolled
             ? 'border-gold text-gold hover:bg-gold hover:text-white'
             : 'border-white/50 text-white hover:bg-white hover:text-charcoal'">
           Consulta
-        </a>
+        </NuxtLink>
       </div>
 
       <button @click="isMenuOpen = !isMenuOpen"
@@ -88,15 +89,15 @@ const menuItems = [
             class="w-48 sm:w-56 h-auto object-contain mx-auto mb-8 opacity-90" />
 
           <div class="flex flex-col gap-7">
-            <a v-for="item in menuItems" :key="item.label" :href="item.href" @click="closeMenu"
+            <NuxtLink v-for="item in menuItems" :key="item.label" :to="item.to" @click="closeMenu"
               class="font-display text-3xl text-white/90 hover:text-gold transition-colors font-light tracking-widest uppercase">
               {{ item.label }}
-            </a>
+            </NuxtLink>
 
-            <a href="#contato" @click="closeMenu"
+            <NuxtLink to="/#contato" @click="closeMenu"
               class="mt-4 inline-block border border-gold text-gold text-sm tracking-[0.3em] uppercase font-bold py-3 px-10 hover:bg-gold hover:text-charcoal transition-all duration-300">
               Agendar Consulta
-            </a>
+            </NuxtLink>
           </div>
         </div>
 

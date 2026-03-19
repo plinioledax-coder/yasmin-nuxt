@@ -33,21 +33,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="relative min-h-screen flex items-center overflow-hidden bg-charcoal pt-24">
+  <header class="relative min-h-screen flex items-center overflow-hidden bg-charcoal pt-24 pb-28 lg:pb-36">
 
-    <!-- Geometric diagonal lines -->
     <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.06]"
       style="background-image: repeating-linear-gradient(45deg, transparent, transparent 80px, rgba(201,168,76,0.5) 80px, rgba(201,168,76,0.5) 81px);">
     </div>
 
-    <!-- Radial gold glow que segue o mouse — parallax lento -->
     <div class="absolute z-0 pointer-events-none transition-transform duration-500 ease-out"
       :style="{ transform: `translate(${mouseX * -25}px, ${mouseY * -25}px)` }">
       <div class="absolute top-[10%] left-[5%] w-[600px] h-[600px] rounded-full blur-[120px] opacity-20"
         style="background: radial-gradient(circle, #C9A84C 0%, transparent 70%);"></div>
     </div>
 
-    <!-- Segundo glow (canto direito) em direção oposta para profundidade -->
     <div class="absolute z-0 pointer-events-none transition-transform duration-700 ease-out"
       :style="{ transform: `translate(${mouseX * 15}px, ${mouseY * 15}px)` }">
       <div class="absolute bottom-[5%] right-[10%] w-[400px] h-[400px] rounded-full blur-[100px] opacity-10"
@@ -55,11 +52,8 @@ onMounted(() => {
     </div>
 
 
-    <!-- Grid principal -->
-    <div
-      class="container mx-auto px-6 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-16 items-center py-8 lg:py-0">
+    <div class="container mx-auto px-6 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
-      <!-- ========== FOTO ========== -->
       <div class="w-full lg:col-span-6 lg:order-last relative flex justify-center items-center"
         :class="{ 'hero-photo-reveal': revealed }">
         <div
@@ -82,8 +76,7 @@ onMounted(() => {
             <div
               class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 lg:hidden pointer-events-none">
               <div class="p-3 sm:p-4 backdrop-blur-md border border-gold/30" style="background: rgba(26,24,20,0.82);">
-                <p class="font-display text-white font-bold text-xs sm:text-sm tracking-widest uppercase">Yasmin Santana
-                </p>
+                <p class="font-display text-white font-bold text-xs sm:text-sm tracking-widest uppercase">Yasmin Santana</p>
                 <p class="text-gold text-[9px] sm:text-[10px] tracking-[0.3em] uppercase mt-1">Advogada · OAB/BA</p>
               </div>
             </div>
@@ -91,18 +84,18 @@ onMounted(() => {
         </div>
       </div>
 
-      <!-- ========== TEXTO ========== -->
-      <div class="w-full lg:col-span-6 space-y-6 lg:space-y-8">
+      <div class="w-full lg:col-span-6 space-y-6 lg:space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left">
 
-        <!-- Tagline -->
-        <div class="flex items-center gap-3 hero-item" :class="{ 'hero-item--visible': revealed }" style="--delay: 0ms">
-          <div class="h-px w-10 bg-gold"></div>
-          <span class="text-gold text-[10px] font-bold tracking-[0.4em] uppercase">OAB/BA · Advocacia</span>
+        <div class="hero-item mb-2 lg:mb-4" :class="{ 'hero-item--visible': revealed }" style="--delay: 0ms">
+          <NuxtImg 
+            src="/images/yasmin-logo.png" 
+            alt="Yasmin Santana Advocacia" 
+            class="w-64 sm:w-72 lg:w-[340px] h-auto object-contain opacity-90 drop-shadow-lg mx-auto lg:mx-0" 
+          />
         </div>
 
-        <!-- Título -->
         <h1
-          class="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] text-white tracking-tight hero-item"
+          class="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] text-white tracking-tight hero-item text-center lg:text-left"
           :class="{ 'hero-item--visible': revealed }" :style="{
             '--delay': '120ms',
             transform: `translate(${mouseX * -3}px, ${mouseY * -3}px)`
@@ -114,15 +107,13 @@ onMounted(() => {
           com excelência.
         </h1>
 
-        <!-- Parágrafo -->
-        <p class="font-body text-white/55 text-base lg:text-lg leading-relaxed max-w-md hero-item"
+        <p class="font-body text-white/55 text-base lg:text-lg leading-relaxed max-w-md hero-item text-center lg:text-left"
           :class="{ 'hero-item--visible': revealed }" style="--delay: 220ms">
           Atendimento jurídico personalizado, estratégico e humanizado.
           Cada caso é único — e merece cuidado dedicado.
         </p>
 
-        <!-- Botões -->
-        <div class="flex flex-row flex-wrap gap-3 pt-2 hero-item" :class="{ 'hero-item--visible': revealed }"
+        <div class="flex flex-row flex-wrap gap-3 pt-2 hero-item justify-center lg:justify-start w-full" :class="{ 'hero-item--visible': revealed }"
           style="--delay: 320ms">
           <button @click="scrollTo('contato')"
             class="group relative px-6 sm:px-8 py-3 sm:py-4 text-charcoal font-bold text-[10px] sm:text-[11px] tracking-[0.25em] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/20 whitespace-nowrap"
@@ -139,27 +130,26 @@ onMounted(() => {
           </button>
         </div>
 
-        <!-- Trust badges -->
-        <div class="pt-3 flex flex-wrap items-center gap-5 border-t border-white/10 hero-item"
+        <div class="pt-3 flex flex-wrap gap-x-5 gap-y-3 justify-center lg:justify-start items-center w-full border-t border-white/10 hero-item"
           :class="{ 'hero-item--visible': revealed }" style="--delay: 420ms">
           <div
-            class="flex items-center gap-2 text-white/40 text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
-            <Scale class="w-4 h-4 text-gold" />
+            class="flex items-center gap-2 text-white/40 text-[10px] lg:text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
+            <Scale class="w-4 h-4 text-gold shrink-0" />
             <span>OAB/BA</span>
           </div>
           <div
-            class="flex items-center gap-2 text-white/40 text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
-            <ShieldCheck class="w-4 h-4 text-gold" />
+            class="flex items-center gap-2 text-white/40 text-[10px] lg:text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
+            <ShieldCheck class="w-4 h-4 text-gold shrink-0" />
             <span>Presencial & Online</span>
           </div>
           <div
-            class="flex items-center gap-2 text-white/40 text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
-            <Award class="w-4 h-4 text-gold" />
+            class="flex items-center gap-2 text-white/40 text-[10px] lg:text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
+            <Award class="w-4 h-4 text-gold shrink-0" />
             <span>+5 anos de atuação</span>
           </div>
           <div
-            class="flex items-center gap-2 text-white/40 text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
-            <Globe class="w-4 h-4 text-gold" />
+            class="flex items-center gap-2 text-white/40 text-[10px] lg:text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
+            <Globe class="w-4 h-4 text-gold shrink-0" />
             <span>Atendimento Nacional</span>
           </div>
         </div>
@@ -167,11 +157,10 @@ onMounted(() => {
 
     </div>
 
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 hero-item"
+    <div class="absolute bottom-6 lg:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 hero-item"
       :class="{ 'hero-item--visible': revealed }" style="--delay: 600ms">
       <span class="text-white/30 text-[9px] tracking-[0.35em] uppercase">Deslize</span>
-      <div class="w-px h-10 overflow-hidden">
+      <div class="w-px h-8 lg:h-12 overflow-hidden">
         <div class="w-full h-full bg-gradient-to-b from-gold/60 to-transparent animate-scroll-line"></div>
       </div>
     </div>
