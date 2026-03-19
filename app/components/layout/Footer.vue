@@ -12,21 +12,21 @@ const scrollToTop = () => {
   <footer id="footer" class="bg-[#0C0A08] text-white relative overflow-hidden border-t border-gold/10">
 
     <div class="absolute top-0 left-0 w-full h-px" style="background: linear-gradient(to right, transparent, #C9A84C50, transparent);"></div>
-    <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
-      style="background-image: repeating-linear-gradient(0deg, transparent, transparent 60px, #C9A84C 60px, #C9A84C 61px);">
-    </div>
 
-    <div class="container mx-auto px-6 py-16">
+    <div class="container mx-auto px-6 py-16 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
 
-        <!-- Brand -->
         <div class="md:col-span-5 space-y-6">
-          <a href="#" @click.prevent="scrollToTop" class="inline-block group">
-            <span class="font-display text-2xl font-bold tracking-[0.1em] uppercase text-white">Yasmin Santana</span>
-            <span class="block text-[9px] tracking-[0.4em] uppercase text-gold/70 mt-1">── Advocacia ──</span>
-          </a>
+          <NuxtLink to="/" @click="scrollToTop" class="inline-block group">
+            <NuxtImg 
+              src="/images/yasmin-logo.png" 
+              alt="Yasmin Santana Advocacia" 
+              width="240" 
+              class="h-auto w-48 sm:w-56 object-contain opacity-90 group-hover:opacity-100 transition-opacity" 
+            />
+          </NuxtLink>
 
-          <p class="text-sm text-white/40 leading-relaxed max-w-xs">
+          <p class="text-sm text-white/40 leading-relaxed max-w-xs mt-4">
             Advocacia humanizada com estratégia e excelência. Cada caso, uma história. Cada cliente, uma prioridade.
           </p>
 
@@ -35,33 +35,31 @@ const scrollToTop = () => {
           </div>
 
           <div class="flex items-center gap-3 pt-2">
-            <a href="https://instagram.com/yasminsantana_adv" target="_blank"
+            <a href="https://instagram.com/yasminsantana_adv" target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
               <Instagram class="w-4 h-4" />
             </a>
-            <a href="https://linkedin.com" target="_blank"
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
               <Linkedin class="w-4 h-4" />
             </a>
-            <a href="https://wa.me/557192128914?text=Ol%C3%A1%20Yasmin%2C%20gostaria%20de%20agendar%20uma%20consulta%20e%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os." target="_blank"
+            <a href="https://wa.me/557192128914?text=Ol%C3%A1%20Yasmin%2C%20gostaria%20de%20agendar%20uma%20consulta%20e%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
               <MessageCircle class="w-4 h-4" />
             </a>
           </div>
         </div>
 
-        <!-- Menu -->
         <div class="md:col-span-3 space-y-5">
           <h3 class="text-[10px] font-bold uppercase tracking-[0.35em] text-gold">Menu</h3>
           <ul class="space-y-3 text-sm text-white/40">
-            <li><a href="#sobre" class="hover:text-gold transition-colors">Sobre</a></li>
-            <li><a href="#servicos" class="hover:text-gold transition-colors">Áreas de Atuação</a></li>
-            <li><a href="#depoimentos" class="hover:text-gold transition-colors">Depoimentos</a></li>
-            <li><a href="#contato" class="hover:text-gold transition-colors">Agendar Consulta</a></li>
+            <li><NuxtLink to="/#sobre" class="hover:text-gold transition-colors">Sobre</NuxtLink></li>
+            <li><NuxtLink to="/#servicos" class="hover:text-gold transition-colors">Áreas de Atuação</NuxtLink></li>
+            <li><NuxtLink to="/#depoimentos" class="hover:text-gold transition-colors">Depoimentos</NuxtLink></li>
+            <li><NuxtLink to="/#contato" class="hover:text-gold transition-colors">Agendar Consulta</NuxtLink></li>
           </ul>
         </div>
 
-        <!-- Contact -->
         <div class="md:col-span-4 space-y-5">
           <h3 class="text-[10px] font-bold uppercase tracking-[0.35em] text-gold">Contato</h3>
           <ul class="space-y-4 text-sm text-white/40">
@@ -77,7 +75,7 @@ const scrollToTop = () => {
             </li>
             <li class="flex items-center gap-3">
               <MessageCircle class="w-4 h-4 text-gold/60 shrink-0" />
-              <a href="https://wa.me/5571999999999" target="_blank" class="hover:text-gold transition-colors">
+              <a href="https://wa.me/5571999999999" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">
                 (71) 99999-9999
               </a>
             </li>
@@ -87,19 +85,25 @@ const scrollToTop = () => {
       </div>
     </div>
 
-    <!-- Bottom bar -->
     <div class="border-t border-white/5">
       <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-[11px] text-white/25 tracking-wider">
+        
+        <p class="text-[11px] text-white/25 tracking-wider text-center md:text-left">
           © {{ currentYear }} Yasmin Santana Advocacia. Todos os direitos reservados.
         </p>
+        
         <button
           @click="scrollToTop"
-          class="group flex items-center gap-2 text-[10px] uppercase font-bold text-white/25 hover:text-gold transition-colors tracking-widest"
+          class="group flex items-center justify-center gap-2 text-[10px] uppercase font-bold text-white/25 hover:text-gold transition-colors tracking-widest shrink-0"
         >
           Topo
           <ArrowUp class="w-3 h-3 group-hover:-translate-y-1 transition-transform" />
         </button>
+
+        <p class="text-[10px] text-white/20 tracking-[0.2em] uppercase text-center md:text-right">
+          Desenvolvido por <a href="https://www.apertef1.com.br" target="_blank" rel="noopener noreferrer" class="font-bold hover:text-gold transition-colors">Aperte F1 ©</a>
+        </p>
+        
       </div>
     </div>
   </footer>

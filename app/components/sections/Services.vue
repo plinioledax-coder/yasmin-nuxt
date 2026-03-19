@@ -1,5 +1,5 @@
 <script setup>
-import { Users, FileText, Briefcase, Home, Scale, Heart, CheckCircle2 } from 'lucide-vue-next'
+import { Users, FileText, Briefcase, Home, Scale, Car, CheckCircle2 } from 'lucide-vue-next'
 
 const services = [
   {
@@ -37,13 +37,13 @@ const services = [
     desc: 'Contratos, responsabilidade civil, cobranças e danos morais e materiais.', 
     link: '/servicos/direito-civil' 
   },
-  { 
+{ 
     id: '06', 
-    icon: Heart, 
-    title: 'Humanizado', 
-    desc: 'Atenção individual, linguagem clara e total transparência em cada etapa.', 
-    link: '/servicos/advocacia-humanizada' 
-  },
+    icon: Car,
+    title: 'Busca e Apreensão', 
+    desc: 'Defesa especializada contra busca e apreensão de veículos, bloqueios judiciais e revisão de juros abusivos.', 
+    link: '/servicos/busca-e-apreensao' 
+  }
 ]
 
 const differentials = [
