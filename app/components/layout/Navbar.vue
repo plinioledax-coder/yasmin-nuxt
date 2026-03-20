@@ -24,14 +24,17 @@ onUnmounted(() => {
   document.body.style.overflow = ''
 })
 
-// MUDANÇA 1: Trocamos 'href' por 'to' e colocamos a '/' antes da âncora
 const menuItems = [
   { label: 'Sobre', to: '/#sobre' },
   { label: 'Áreas de Atuação', to: '/#servicos' },
   { label: 'Depoimentos', to: '/#depoimentos' },
-  { label: 'Blog', to: '#blog' },
+  { label: 'Blog', to: '/blog' },
   { label: 'Contato', to: '/#contato' },
 ]
+
+const phone = '557192128914'
+const message = encodeURIComponent('Olá Yasmin! Visitei seu site e gostaria de saber mais sobre seus serviços jurídicos.')
+const link = `https://wa.me/${phone}?text=${message}`
 </script>
 
 <template>
@@ -60,13 +63,13 @@ const menuItems = [
           {{ item.label }}
         </NuxtLink>
 
-        <NuxtLink to="/#contato"
+        <a :href="link" target="_blank" rel="noopener noreferrer"
           class="px-6 py-2.5 border text-[10px] font-bold tracking-[0.25em] uppercase transition-all duration-300 hover:shadow-md"
           :class="isScrolled
             ? 'border-gold text-gold hover:bg-gold hover:text-white'
             : 'border-white/50 text-white hover:bg-white hover:text-charcoal'">
           Consulta
-        </NuxtLink>
+        </a>
       </div>
 
       <button @click="isMenuOpen = !isMenuOpen"
@@ -95,10 +98,10 @@ const menuItems = [
               {{ item.label }}
             </NuxtLink>
 
-            <NuxtLink to="/#contato" @click="closeMenu"
+            <a :href="link" target="_blank" rel="noopener noreferrer" @click="closeMenu"
               class="mt-4 inline-block border border-gold text-gold text-sm tracking-[0.3em] uppercase font-bold py-3 px-10 hover:bg-gold hover:text-charcoal transition-all duration-300">
               Agendar Consulta
-            </NuxtLink>
+            </a>
           </div>
         </div>
 

@@ -23,7 +23,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com Yasmin Santana via WhatsApp"
-      class="group fixed bottom-8 right-8 z-50 flex items-center justify-center w-14 h-14 transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-2xl border border-gold/30"
+      class="group fixed bottom-12 right-8 z-50 flex items-center justify-center w-14 h-14 transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-2xl border border-gold/30"
       style="background: linear-gradient(135deg, #C9A84C, #F0D080);"
     >
       <!-- Pulse ring -->

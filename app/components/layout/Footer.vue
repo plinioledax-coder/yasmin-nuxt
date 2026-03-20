@@ -6,6 +6,11 @@ const currentYear = new Date().getFullYear()
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+// Configuração do WhatsApp padronizada
+const phone = '557192128914'
+const message = encodeURIComponent('Olá Yasmin! Visitei seu site e gostaria de saber mais sobre seus serviços jurídicos.')
+const link = `https://wa.me/${phone}?text=${message}`
 </script>
 
 <template>
@@ -43,7 +48,7 @@ const scrollToTop = () => {
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
               <Linkedin class="w-4 h-4" />
             </a>
-            <a href="https://wa.me/557192128914?text=Ol%C3%A1%20Yasmin%2C%20gostaria%20de%20agendar%20uma%20consulta%20e%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"
+            <a :href="link" target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
               <MessageCircle class="w-4 h-4" />
             </a>
@@ -56,8 +61,9 @@ const scrollToTop = () => {
             <li><NuxtLink to="/#sobre" class="hover:text-gold transition-colors">Sobre</NuxtLink></li>
             <li><NuxtLink to="/#servicos" class="hover:text-gold transition-colors">Áreas de Atuação</NuxtLink></li>
             <li><NuxtLink to="/#depoimentos" class="hover:text-gold transition-colors">Depoimentos</NuxtLink></li>
-            <li><NuxtLink to="#blog" class="hover:text-gold transition-colors">Blog</NuxtLink></li>
-            <li><NuxtLink to="/#contato" class="hover:text-gold transition-colors">Agendar Consulta</NuxtLink></li>
+            <li><NuxtLink to="/blog" class="hover:text-gold transition-colors">Blog</NuxtLink></li>
+            <li><NuxtLink to="/#contato" class="hover:text-gold transition-colors">Contato</NuxtLink></li>
+            <li><a :href="link" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">Agendar Consulta</a></li>
           </ul>
         </div>
 
@@ -76,8 +82,8 @@ const scrollToTop = () => {
             </li>
             <li class="flex items-center gap-3">
               <MessageCircle class="w-4 h-4 text-gold/60 shrink-0" />
-              <a href="https://wa.me/5571999999999" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">
-                (71) 99999-9999
+              <a :href="link" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">
+                (71) 9212-8914
               </a>
             </li>
           </ul>
