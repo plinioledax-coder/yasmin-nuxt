@@ -4,6 +4,7 @@
       <SectionsAbout />
       <SectionsServices />
       <SectionsTestimonials />
+      <SectionsBlog />
       <SectionsContact />
     </div>
   </template>

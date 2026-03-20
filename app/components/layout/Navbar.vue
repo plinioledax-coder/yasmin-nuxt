@@ -29,6 +29,7 @@ const menuItems = [
   { label: 'Sobre', to: '/#sobre' },
   { label: 'Áreas de Atuação', to: '/#servicos' },
   { label: 'Depoimentos', to: '/#depoimentos' },
+  { label: 'Blog', to: '#blog' },
   { label: 'Contato', to: '/#contato' },
 ]
 </script>

@@ -56,6 +56,7 @@ const scrollToTop = () => {
             <li><NuxtLink to="/#sobre" class="hover:text-gold transition-colors">Sobre</NuxtLink></li>
             <li><NuxtLink to="/#servicos" class="hover:text-gold transition-colors">Áreas de Atuação</NuxtLink></li>
             <li><NuxtLink to="/#depoimentos" class="hover:text-gold transition-colors">Depoimentos</NuxtLink></li>
+            <li><NuxtLink to="#blog" class="hover:text-gold transition-colors">Blog</NuxtLink></li>
             <li><NuxtLink to="/#contato" class="hover:text-gold transition-colors">Agendar Consulta</NuxtLink></li>
           </ul>
         </div>
