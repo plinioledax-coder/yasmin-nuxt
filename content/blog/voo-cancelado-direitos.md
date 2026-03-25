@@ -2,6 +2,7 @@
 title: 'Voo cancelado ou atrasado? Conheça seus direitos de indenização'
 description: 'As companhias aéreas têm deveres claros em caso de atrasos. Veja quando cabe pedido de danos morais e materiais.'
 date: '28 de Janeiro de 2026'
+dateSort: '2026-01-28' 
 category: 'Direito do Consumidor'
 image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1200'
 readTime: '4 min de leitura'

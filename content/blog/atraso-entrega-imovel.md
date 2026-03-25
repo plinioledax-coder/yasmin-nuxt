@@ -2,6 +2,7 @@
 title: 'Atraso na entrega do imóvel na planta: O que a construtora deve pagar?'
 description: 'Passou do prazo de carência e você ainda não recebeu as chaves? Descubra seus direitos e como exigir a multa contratual.'
 date: '18 de Novembro de 2025'
+dateSort: '2028-11-18' 
 category: 'Direito Imobiliário'
 image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200'
 readTime: '4 min de leitura'

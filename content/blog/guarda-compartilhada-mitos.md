@@ -2,6 +2,7 @@
 title: 'Guarda Compartilhada significa que a criança vai morar 15 dias com cada um?'
 description: 'Desmistificamos a maior dúvida sobre guarda de filhos no Brasil. Entenda a diferença entre Guarda Compartilhada e Guarda Alternada.'
 date: '25 de Outubro de 2025'
+dateSort: '2025-10-25'  
 category: 'Direito de Família'
 image: 'https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?auto=format&fit=crop&q=80&w=1200'
 readTime: '3 min de leitura'

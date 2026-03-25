@@ -1,5 +1,5 @@
 <script setup>
-import { Quote, Star } from 'lucide-vue-next'
+import { Quote, Star, ArrowRight, BadgeCheck } from 'lucide-vue-next'
 
 const testimonials = [
   {
@@ -31,15 +31,13 @@ const testimonials = [
 
     <div class="absolute top-0 left-0 w-full h-px" style="background: linear-gradient(to right, transparent, #C9A84C40, transparent);"></div>
 
-    <!-- Subtle texture -->
     <div class="absolute inset-0 opacity-[0.025] pointer-events-none"
       style="background-image: repeating-linear-gradient(0deg, transparent, transparent 60px, #C9A84C 60px, #C9A84C 61px), repeating-linear-gradient(90deg, transparent, transparent 60px, #C9A84C 60px, #C9A84C 61px);">
     </div>
 
     <div class="container mx-auto px-6 relative z-10">
 
-      <!-- Header -->
-      <div class="text-center mb-20">
+      <div class="text-center mb-20 flex flex-col items-center">
         <div class="flex items-center justify-center gap-3 mb-5">
           <div class="h-px w-10 bg-gold"></div>
           <span class="text-gold text-[10px] font-bold tracking-[0.4em] uppercase">Depoimentos</span>
@@ -54,9 +52,13 @@ const testimonials = [
         <p class="mt-5 text-charcoal/50 text-lg max-w-xl mx-auto">
           Histórias reais de pessoas que encontraram na advocacia um caminho para a justiça.
         </p>
+        
+        <div class="mt-8 inline-flex items-center gap-2.5 px-5 py-2 border border-gold/30 bg-gold/5 shadow-sm">
+          <BadgeCheck class="w-4 h-4 text-gold" />
+          <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-charcoal mt-0.5">Depoimentos reais e verificados</span>
+        </div>
       </div>
 
-      <!-- Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="item in testimonials"
@@ -64,7 +66,6 @@ const testimonials = [
           class="group p-8 border border-charcoal/8 bg-white hover:border-gold/40 hover:shadow-xl hover:shadow-gold/5 transition-all duration-500 relative flex flex-col"
           style="clip-path: polygon(0 0, 100% 0, 100% 92%, 94% 100%, 0 100%);"
         >
-          <!-- Gold accent corner -->
           <div class="absolute top-0 left-0 w-12 h-12 overflow-hidden">
             <div class="absolute top-0 left-0 w-0 h-0 border-t-[48px] border-t-gold/20 border-r-[48px] border-r-transparent group-hover:border-t-gold/40 transition-colors duration-300"></div>
           </div>
@@ -93,6 +94,13 @@ const testimonials = [
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <NuxtLink to="/depoimentos" class="inline-flex items-center justify-center gap-3 px-10 py-4 bg-charcoal text-white text-[10px] font-bold tracking-[0.25em] uppercase hover:bg-gold hover:text-charcoal transition-all duration-300 group">
+          Ler mais relatos
+          <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </NuxtLink>
       </div>
 
     </div>

@@ -1,5 +1,5 @@
 <script setup>
-import { ArrowUp, Instagram, Mail, MapPin, MessageCircle, Linkedin } from 'lucide-vue-next'
+import { ArrowUp, Instagram, Mail, MapPin, MessageCircle } from 'lucide-vue-next'
 
 const currentYear = new Date().getFullYear()
 
@@ -43,10 +43,6 @@ const link = `https://wa.me/${phone}?text=${message}`
             <a href="https://instagram.com/yasminsantana_adv" target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
               <Instagram class="w-4 h-4" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-              class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
-              <Linkedin class="w-4 h-4" />
             </a>
             <a :href="link" target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">

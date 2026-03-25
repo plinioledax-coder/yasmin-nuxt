@@ -1,3 +1,12 @@
+<script setup>
+// O "Seguro" de Compartilhamento (WhatsApp, Instagram, LinkedIn)
+useSeoMeta({
+  ogImage: '/images/yasmin-share.png', // A imagem que vai aparecer no WhatsApp
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
+</script>
+
 <template>
   <div class="font-body text-charcoal bg-ivory selection:bg-gold/30 selection:text-charcoal-dark min-h-screen flex flex-col">
     
@@ -22,6 +31,3 @@ html {
   scroll-behavior: smooth;
 }
 </style>
-
-<script setup>
-</script>
