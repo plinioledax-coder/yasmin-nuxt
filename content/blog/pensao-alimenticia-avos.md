@@ -1,11 +1,12 @@
 ---
 title: 'Os avós podem ser obrigados a pagar pensão alimentícia?'
 description: 'Entenda como funciona a responsabilidade subsidiária e em quais casos a Justiça transfere a obrigação para os avós.'
-date: '10 de Dezembro de 2025'
-dateSort: '2025-12-10' 
-category: 'Direito de Família'
-image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1200'
-readTime: '3 min de leitura'
+meta:
+  date: '10 de Dezembro de 2025'
+  dateSort: '2025-12-10' 
+  category: 'Direito de Família'
+  image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1200'
+  readTime: '3 min de leitura'
 ---
 
 A pensão alimentícia é, prioritariamente, uma obrigação dos pais. Mas o que acontece quando o pai (ou a mãe) que deveria pagar a pensão desaparece, falece, ou simplesmente não tem nenhum recurso financeiro para garantir o sustento da criança?

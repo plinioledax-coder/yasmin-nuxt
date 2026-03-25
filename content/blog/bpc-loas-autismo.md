@@ -1,14 +1,15 @@
 ---
 title: 'Meu filho tem autismo. Tenho direito ao benefício do INSS (BPC/LOAS)?'
 description: 'Entenda os requisitos exigidos pelo INSS para conceder o Benefício de Prestação Continuada para pessoas com Transtorno do Espectro Autista.'
-date: '10 de Janeiro de 2026'
-dateSort: '2026-01-10'
-category: 'Direito Previdenciário'
-image: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&q=80&w=1200'
-readTime: '3 min de leitura'
+meta:
+  date: '10 de Janeiro de 2026'
+  dateSort: '2026-01-10'
+  category: 'Direito Previdenciário'
+  image: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&q=80&w=1200'
+  readTime: '3 min de leitura'
 ---
 
-O diagnóstico do Transtorno do Espectro Autista (TEA) traz consigo muitos desafios para as famílias, inclusive financeiros, devido aos custos com terapias e tratamentos multidisciplinares. 
+O diagnóstico do Transtorno do Espectro Autista (TEA) traz consigo muitos desafios para as famílias, inclusive financeiros, devido aos custos com terapias e tratamentos multidisciplinares.
 
 O que muitos pais não sabem é que a criança com autismo pode ter direito ao **BPC/LOAS** (Benefício de Prestação Continuada), que garante o pagamento de um salário mínimo mensal pelo INSS.
 

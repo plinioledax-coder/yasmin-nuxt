@@ -53,8 +53,9 @@ useHead({
 })
 
 // ─── Dados da página ─────────────────────────────────────────
-const WHATSAPP_NUMBER = '5571999999999'
-const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20sobre%20direito%20imobili%C3%A1rio.`
+const WHATSAPP_NUMBER = '5571992128914'
+const message = "Olá Yasmin! Visitei seu site e gostaria de saber mais sobre seus serviços jurídicos em Direito Imobiliário.";
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 const benefits = [
   'Auditoria jurídica (Due Diligence) para compra e venda segura de imóveis.',

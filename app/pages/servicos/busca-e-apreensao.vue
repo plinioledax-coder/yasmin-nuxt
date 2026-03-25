@@ -53,7 +53,7 @@ useHead({
 })
 
 // ─── Dados da página ─────────────────────────────────────────
-const WHATSAPP_NUMBER = '5571999999999'
+const WHATSAPP_NUMBER = '5571992128914'
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=URGENTE:%20Preciso%20de%20ajuda%20com%20busca%20e%20apreens%C3%A3o%20de%20ve%C3%ADculo.`
 
 const benefits = [

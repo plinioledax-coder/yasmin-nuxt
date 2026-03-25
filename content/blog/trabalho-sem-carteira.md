@@ -1,11 +1,12 @@
 ---
 title: 'Trabalho sem carteira assinada: quais são os meus direitos?'
 description: 'Muitos trabalhadores acreditam que por não terem registro não possuem direitos. Saiba como o reconhecimento de vínculo funciona.'
-date: '15 de Fevereiro de 2026'
-dateSort: '2026-02-15'
-category: 'Direito Trabalhista'
-image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200'
-readTime: '3 min de leitura'
+meta:
+  date: '15 de Fevereiro de 2026'
+  dateSort: '2026-02-15'
+  category: 'Direito Trabalhista'
+  image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200'
+  readTime: '3 min de leitura'
 ---
 
 Trabalhar sem carteira assinada é, infelizmente, uma realidade comum. O que muitos empregadores dizem (e muitos funcionários acreditam) é que, sem o registro formal na CTPS, não há direitos a serem cobrados. **Isso é um mito.**

@@ -53,8 +53,9 @@ useHead({
 })
 
 // ─── Dados da página ─────────────────────────────────────────
-const WHATSAPP_NUMBER = '5571999999999'
-const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20%C3%A1rea%20c%C3%ADvel.`
+const WHATSAPP_NUMBER = '5571992128914'
+const message = "Olá Yasmin! Visitei seu site e gostaria de saber mais sobre seus serviços jurídicos em Direito Civil.";
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 const benefits = [
   'Elaboração, revisão e rescisão de contratos com segurança jurídica.',

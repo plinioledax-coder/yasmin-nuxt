@@ -68,7 +68,7 @@ const link = `https://wa.me/${phone}?text=${message}`
           <ul class="space-y-4 text-sm text-white/40">
             <li class="flex items-start gap-3">
               <MapPin class="w-4 h-4 text-gold/60 mt-0.5 shrink-0" />
-              <span>Salvador – BA<br>Presencial & Online</span>
+              <span>Camaçari – BA<br>Presencial & Online</span>
             </li>
             <li class="flex items-center gap-3">
               <Mail class="w-4 h-4 text-gold/60 shrink-0" />

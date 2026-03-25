@@ -1,11 +1,12 @@
 ---
 title: 'Síndrome de Burnout é acidente de trabalho? Conheça seus direitos.'
 description: 'O esgotamento profissional extremo agora é reconhecido como doença ocupacional. Veja o que a empresa é obrigada a pagar.'
-date: '05 de Dezembro de 2025'
-dateSort: '2025-12-05'
-category: 'Direito Trabalhista'
-image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=1200'
-readTime: '4 min de leitura'
+meta:
+  date: '05 de Dezembro de 2025'
+  dateSort: '2025-12-05'
+  category: 'Direito Trabalhista'
+  image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=1200'
+  readTime: '4 min de leitura'
 ---
 
 Metas inatingíveis, assédio moral, cobranças fora do horário de expediente e sobrecarga constante. Esse cenário tem levado milhares de trabalhadores ao esgotamento físico e mental extremo, conhecido como **Síndrome de Burnout**.

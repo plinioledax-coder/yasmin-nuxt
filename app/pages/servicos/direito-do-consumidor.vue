@@ -53,8 +53,9 @@ useHead({
 })
 
 // ─── Dados da página ─────────────────────────────────────────
-const WHATSAPP_NUMBER = '5571999999999'
-const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20sobre%20direito%20do%20consumidor.`
+const WHATSAPP_NUMBER = '5571992128914'
+const message = "Olá Yasmin! Visitei seu site e gostaria de saber mais sobre seus serviços jurídicos em Direito do Consumidor.";
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 const benefits = [
   'Ações de indenização por negativação indevida (SPC/Serasa).',

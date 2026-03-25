@@ -1,11 +1,12 @@
 ---
 title: 'Busca e Apreensão de Veículos: Como agir quando o banco ameaça tomar seu carro?'
 description: 'Atrasei a parcela do financiamento, e agora? Entenda seus direitos e saiba como evitar a perda do seu veículo por juros abusivos.'
-date: '05 de Março de 2026'
-dateSort: '2026-03-05' 
-category: 'Direito Civil'
-image: 'https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&q=80&w=1200'
-readTime: '4 min de leitura'
+meta:
+  date: '05 de Março de 2026'
+  dateSort: '2026-03-05'
+  category: 'Direito Civil'
+  image: 'https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&q=80&w=1200'
+  readTime: '4 min de leitura'
 ---
 
 Atrasei a parcela do carro. O banco pode tomar meu veículo imediatamente? Essa é uma das maiores aflições de quem financia um automóvel e passa por um imprevisto financeiro.
@@ -25,7 +26,7 @@ Se o oficial de justiça chegar com o mandado, o veículo infelizmente deve ser 
 1. **Pagar a dívida integral (Prazo de 5 dias):** Você tem o direito de pagar o valor total pendente (as parcelas atrasadas somadas às que ainda vão vencer) para ter o carro devolvido imediatamente, um processo conhecido como *purgação da mora*.
 2. **Apresentar defesa (Prazo de 15 dias):** É exatamente neste ponto que a atuação de uma advogada especialista muda o cenário.
 
-> **A grande estratégia de defesa:** A imensa maioria dos contratos de financiamento de veículos no Brasil possui **juros abusivos**, capitalização ilegal e tarifas embutidas que desrespeitam o Código de Defesa do Consumidor. 
+> **A grande estratégia de defesa:** A imensa maioria dos contratos de financiamento de veículos no Brasil possui **juros abusivos**, capitalização ilegal e tarifas embutidas que desrespeitam o Código de Defesa do Consumidor.
 
 Ao invés de simplesmente aceitar a perda do carro ou tentar pagar uma dívida inflada, nós analisamos o seu contrato minuciosamente. Se identificarmos cobranças indevidas, questionamos esses valores dentro do processo. Em diversos casos, o valor real que você deve cai drasticamente, abrindo espaço para um acordo muito mais justo com a instituição financeira.
 
