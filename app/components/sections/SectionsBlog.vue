@@ -1,17 +1,14 @@
 <script setup>
 import { ArrowRight, Calendar, Clock } from 'lucide-vue-next'
 
-// Busca os artigos na v3 e limita aos 3 primeiros para não quebrar o layout da Home
-const { data: posts } = await useAsyncData('home-posts', async () => {
-  const articles = await queryCollection('content').all()
-  
-  // Ordena do mais novo para o mais velho usando o dateSort e pega apenas os 3 primeiros para a Home
-  return articles
-    .sort((a, b) => new Date(b.meta.dateSort) - new Date(a.meta.dateSort))
-    .slice(0, 3) 
-})
+const { data: posts } = await useAsyncData('home-posts', () =>
+  queryCollection('content').all().then(articles =>
+    articles
+      .sort((a, b) => new Date(b.meta.dateSort) - new Date(a.meta.dateSort))
+      .slice(0, 3)
+  )
+)
 </script>
-
 <template>
   <section id="blog" class="py-28 bg-ivory relative overflow-hidden">
     <div class="container mx-auto px-6 max-w-7xl relative z-10">
