@@ -103,9 +103,6 @@ onUnmounted(() => {
               <p class="text-charcoal-light text-sm tracking-[0.25em] uppercase font-bold">
                 {{ profile.role }}
               </p>
-              <span class="px-3 py-1 border border-gold/30 text-[9px] font-bold tracking-[0.2em] uppercase text-gold whitespace-nowrap">
-                {{ profile.oab }}
-              </span>
             </div>
           </div>
 

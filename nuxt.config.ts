@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/content'],
+
+  content: ( {
+    collections: {
+      content: {
+        type: 'page',
+        source: '**/*.md',
+      }
+    }
+  } as any ),
+
   app: {
     head: {
       title: 'Yasmin Santana | Advocacia',
@@ -16,5 +26,6 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   compatibilityDate: '2024-11-01',
 })
