@@ -2,14 +2,22 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/content'],
 
-  content: ( {
+  nitro: {
+    preset: 'vercel'
+  },
+
+  content: ({
+    database: {
+      type: 'libsql',
+      url: ':memory:'
+    },
     collections: {
       content: {
         type: 'page',
         source: '**/*.md',
       }
     }
-  } as any ),
+  } as any),
 
   app: {
     head: {
