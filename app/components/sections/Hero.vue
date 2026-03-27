@@ -27,7 +27,6 @@ const scrollTo = (id) => {
 // --- Stagger reveal na entrada ---
 const revealed = ref(false)
 onMounted(() => {
-  // pequeno delay para garantir que o CSS de animação seja aplicado após mount
   requestAnimationFrame(() => { revealed.value = true })
 })
 </script>
@@ -51,13 +50,14 @@ onMounted(() => {
         style="background: radial-gradient(circle, #C9A84C 0%, transparent 70%);"></div>
     </div>
 
+    <div
+      class="container mx-auto px-6 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
-    <div class="container mx-auto px-6 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-
+      <!-- FOTO -->
       <div class="w-full lg:col-span-6 lg:order-last relative flex justify-center items-center"
         :class="{ 'hero-photo-reveal': revealed }">
         <div
-          class="relative w-full max-w-[280px] sm:max-w-sm lg:max-w-[420px] transition-transform duration-200 ease-out"
+          class="relative w-full max-w-[360px] sm:max-w-sm lg:max-w-[420px] transition-transform duration-200 ease-out"
           :style="{ transform: `translate(${mouseX * 8}px, ${mouseY * 8}px)` }">
           <div
             class="absolute inset-x-6 inset-y-4 border border-gold/20 rotate-2 translate-x-3 translate-y-3 hidden sm:block">
@@ -76,7 +76,8 @@ onMounted(() => {
             <div
               class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 lg:hidden pointer-events-none">
               <div class="p-3 sm:p-4 backdrop-blur-md border border-gold/30" style="background: rgba(26,24,20,0.82);">
-                <p class="font-display text-white font-bold text-xs sm:text-sm tracking-widest uppercase">Yasmin Santana</p>
+                <p class="font-display text-white font-bold text-xs sm:text-sm tracking-widest uppercase">Yasmin Santana
+                </p>
                 <p class="text-gold text-[9px] sm:text-[10px] tracking-[0.3em] uppercase mt-1">Advogada · OAB/BA</p>
               </div>
             </div>
@@ -84,14 +85,13 @@ onMounted(() => {
         </div>
       </div>
 
-      <div class="w-full lg:col-span-6 space-y-6 lg:space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+      <!-- TEXTO -->
+      <div
+        class="w-full lg:col-span-6 space-y-6 lg:space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left">
 
         <div class="hero-item mb-2 lg:mb-4" :class="{ 'hero-item--visible': revealed }" style="--delay: 0ms">
-          <NuxtImg 
-            src="/images/yasmin-logo.png" 
-            alt="Yasmin Santana Advocacia" 
-            class="w-64 sm:w-72 lg:w-[340px] h-auto object-contain opacity-90 drop-shadow-lg mx-auto lg:mx-0" 
-          />
+          <NuxtImg src="/images/yasmin-logo.png" alt="Yasmin Santana Advocacia"
+            class="w-64 sm:w-72 lg:w-[340px] h-auto object-contain opacity-90 drop-shadow-lg mx-auto lg:mx-0" />
         </div>
 
         <h1
@@ -113,8 +113,8 @@ onMounted(() => {
           Cada caso é único — e merece cuidado dedicado.
         </p>
 
-        <div class="flex flex-row flex-wrap gap-3 pt-2 hero-item justify-center lg:justify-start w-full" :class="{ 'hero-item--visible': revealed }"
-          style="--delay: 320ms">
+        <div class="flex flex-row flex-wrap gap-3 pt-2 hero-item justify-center lg:justify-start w-full"
+          :class="{ 'hero-item--visible': revealed }" style="--delay: 320ms">
           <button @click="scrollTo('contato')"
             class="group relative px-6 sm:px-8 py-3 sm:py-4 text-charcoal font-bold text-[10px] sm:text-[11px] tracking-[0.25em] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/20 whitespace-nowrap"
             style="background: linear-gradient(135deg, #C9A84C, #F0D080);">
@@ -130,7 +130,8 @@ onMounted(() => {
           </button>
         </div>
 
-        <div class="pt-3 flex flex-wrap gap-x-5 gap-y-3 justify-center lg:justify-start items-center w-full border-t border-white/10 hero-item"
+        <div
+          class="pt-3 flex flex-wrap gap-x-5 gap-y-3 justify-center lg:justify-start items-center w-full border-t border-white/10 hero-item"
           :class="{ 'hero-item--visible': revealed }" style="--delay: 420ms">
           <div
             class="flex items-center gap-2 text-white/40 text-[10px] lg:text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
@@ -157,7 +158,8 @@ onMounted(() => {
 
     </div>
 
-    <div class="absolute bottom-6 lg:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 hero-item"
+    <!-- DESLIZE -->
+    <div class="absolute bottom-6 lg:bottom-10 w-full flex flex-col items-center gap-2 z-10 hero-item"
       :class="{ 'hero-item--visible': revealed }" style="--delay: 600ms">
       <span class="text-white/30 text-[9px] tracking-[0.35em] uppercase">Deslize</span>
       <div class="w-px h-8 lg:h-12 overflow-hidden">
@@ -169,7 +171,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* ─── Stagger reveal ─────────────────────────────────────────── */
 .hero-item {
   opacity: 0;
   transform: translateY(24px);
@@ -183,7 +184,6 @@ onMounted(() => {
   transform: translateY(0);
 }
 
-/* ─── Foto: fade + leve scale na entrada ─────────────────────── */
 .hero-photo-reveal {
   animation: photoReveal 1s cubic-bezier(0.16, 1, 0.3, 1) 150ms both;
 }
@@ -200,7 +200,6 @@ onMounted(() => {
   }
 }
 
-/* ─── Scroll indicator: linha caindo em loop ─────────────────── */
 @keyframes scrollLine {
   0% {
     transform: translateY(-100%);
