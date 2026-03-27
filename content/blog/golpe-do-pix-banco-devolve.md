@@ -1,12 +1,11 @@
 ---
 title: 'Caí no golpe do PIX. O banco é obrigado a devolver meu dinheiro?'
 description: 'Fui vítima de fraude no WhatsApp ou falso leilão. Descubra em quais situações a Justiça obriga as instituições bancárias a ressarcirem o cliente.'
-meta:
-  date: '15 de Outubro de 2025'
-  dateSort: '2025-10-15'
-  category: 'Direito do Consumidor'
-  image: 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=1200'
-  readTime: '4 min de leitura'
+date: '15 de Outubro de 2025'
+dateSort: '2025-10-15'
+category: 'Direito do Consumidor'
+image: 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=1200'
+readTime: '4 min de leitura'
 ---
 
 Com a popularização do PIX, os golpes financeiros explodiram no Brasil. Clonagem de WhatsApp, falsas centrais de atendimento, boletos falsos e falsos leilões fazem vítimas todos os dias. 

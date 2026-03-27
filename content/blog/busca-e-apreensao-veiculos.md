@@ -1,12 +1,11 @@
 ---
 title: 'Busca e Apreensão de Veículos: Como agir quando o banco ameaça tomar seu carro?'
 description: 'Atrasei a parcela do financiamento, e agora? Entenda seus direitos e saiba como evitar a perda do seu veículo por juros abusivos.'
-meta:
-  date: '05 de Março de 2026'
-  dateSort: '2026-03-05'
-  category: 'Direito Civil'
-  image: 'https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&q=80&w=1200'
-  readTime: '4 min de leitura'
+date: '05 de Março de 2026'
+dateSort: '2026-03-05'
+category: 'Direito Civil'
+image: 'https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&q=80&w=1200'
+readTime: '4 min de leitura'
 ---
 
 Atrasei a parcela do carro. O banco pode tomar meu veículo imediatamente? Essa é uma das maiores aflições de quem financia um automóvel e passa por um imprevisto financeiro.

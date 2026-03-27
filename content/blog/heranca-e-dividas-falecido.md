@@ -1,12 +1,11 @@
 ---
 title: 'Quem herda os bens, herda também as dívidas do falecido?'
 description: 'Um dos maiores medos no inventário é ter que pagar as contas de quem faleceu. Entenda o limite da responsabilidade dos herdeiros.'
-meta:
-  date: '10 de Setembro de 2025'
-  dateSort: '2025-09-10'
-  category: 'Direito Civil'
-  image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200'
-  readTime: '3 min de leitura'
+date: '10 de Setembro de 2025'
+dateSort: '2025-09-10'
+category: 'Direito Civil'
+image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200'
+readTime: '3 min de leitura'
 ---
 
 Perder um ente querido já é um momento de extrema dor. E quando chega a hora de abrir o inventário, muitos herdeiros entram em pânico ao descobrir que o falecido deixou dívidas com bancos, cartões de crédito ou impostos. 

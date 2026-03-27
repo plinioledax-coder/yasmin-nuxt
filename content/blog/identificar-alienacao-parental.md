@@ -1,12 +1,11 @@
 ---
 title: 'Como identificar a alienação parental e proteger seu filho'
 description: 'Falar mal do outro genitor e sabotar visitas são sinais de alienação. Entenda como a lei pune essa prática que destrói o psicológico da criança.'
-meta:
-  date: '20 de Novembro de 2025'
-  dateSort: '2025-11-20'
-  category: 'Direito de Família'
-  image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200'
-  readTime: '3 min de leitura'
+date: '20 de Novembro de 2025'
+dateSort: '2025-11-20'
+category: 'Direito de Família'
+image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200'
+readTime: '3 min de leitura'
 ---
 
 O fim de um relacionamento quase nunca é fácil, mas o conflito entre o casal jamais deve envolver os filhos. Quando um dos pais (ou avós) começa a manipular a criança para que ela crie raiva ou repúdio do outro genitor, estamos diante de um caso grave de **Alienação Parental**.

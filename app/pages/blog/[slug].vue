@@ -15,8 +15,7 @@ if (article.value) {
     description: article.value.description,
     ogTitle: `${article.value.title} | Yasmin Santana Advocacia`,
     ogDescription: article.value.description,
-    // Note o .meta.image aqui!
-    ogImage: article.value.meta?.image || '/images/yasmin-share.jpg',
+    ogImage: article.value.image || '/images/yasmin-share.jpg',
     ogType: 'article',
     twitterCard: 'summary_large_image',
   })
@@ -41,7 +40,7 @@ if (article.value) {
 
       <header class="mb-12">
         <div class="text-gold text-[10px] font-bold tracking-[0.4em] uppercase mb-4">
-          {{ article.meta?.category }}
+          {{ article.category }}
         </div>
 
         <h1 class="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-8">
@@ -51,17 +50,17 @@ if (article.value) {
         <div class="flex items-center gap-4 text-white/40 text-xs border-b border-white/10 pb-8">
           <div class="flex items-center gap-1.5">
             <Calendar class="w-4 h-4 text-gold" />
-            <span>{{ article.meta?.date }}</span>
+            <span>{{ article.date }}</span>
           </div>
           <div class="flex items-center gap-1.5">
             <Clock class="w-4 h-4 text-gold" />
-            <span>{{ article.meta?.readTime }}</span>
+            <span>{{ article.readTime }}</span>
           </div>
         </div>
       </header>
 
-      <div v-if="article.meta?.image" class="aspect-[21/9] w-full mb-12 overflow-hidden shadow-2xl shadow-black/30">
-        <img :src="article.meta?.image" :alt="article.title" class="w-full h-full object-cover" />
+      <div v-if="article.image" class="aspect-[21/9] w-full mb-12 overflow-hidden shadow-2xl shadow-black/30">
+        <img :src="article.image" :alt="article.title" class="w-full h-full object-cover" />
       </div>
 
       <div class="prose-blog">
@@ -84,7 +83,6 @@ if (article.value) {
 </template>
 
 <style>
-/* Seus estilos originais da .prose-blog continuam iguais aqui */
 .prose-blog p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.125rem;
