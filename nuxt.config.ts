@@ -1,12 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/content'],
+  // @nuxtjs/sitemap DEVE vir antes do @nuxt/content
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/sitemap', '@nuxt/content'],
 
   nitro: {
     preset: 'vercel'
   },
 
-  content: ({
+  site: {
+    url: 'https://yasminsantana.adv.br',
+  },
+
+  sitemap: {
+    sources: ['/api/__sitemap__/urls'],
+  },
+
+  content: {
     database: {
       type: 'libsql',
       url: ':memory:'
@@ -14,10 +23,10 @@ export default defineNuxtConfig({
     collections: {
       content: {
         type: 'page',
-      source: 'blog/**/*.md', // 👈 caminho explícito
+        source: 'blog/**/*.md',
       }
     }
-  } as any),
+  },
 
   app: {
     head: {
