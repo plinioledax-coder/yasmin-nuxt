@@ -5,7 +5,7 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs'
 import { join } from 'path'
 
-const BLOG_DIR = './content/blog'
+const BLOG_DIR = '../content/blog'
 
 const files = readdirSync(BLOG_DIR).filter(f => f.endsWith('.md'))
 

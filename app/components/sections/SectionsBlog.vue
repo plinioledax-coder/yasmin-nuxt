@@ -1,13 +1,9 @@
 <script setup>
 import { ArrowRight, Calendar, Clock } from 'lucide-vue-next'
 
-const { data: posts } = await useAsyncData('home-posts', () =>
-  queryCollection('content').all().then(articles =>
-    articles
-      .sort((a, b) => new Date(b.dateSort) - new Date(a.dateSort))
-      .slice(0, 3)
-  )
-)
+defineProps({
+  posts: Array
+})
 </script>
 
 <template>
@@ -42,27 +38,27 @@ const { data: posts } = await useAsyncData('home-posts', () =>
 
           <div class="relative aspect-[16/10] overflow-hidden block shrink-0">
             <img
-              :src="post.image || 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'"
+              :src="post.meta?.image || 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'"
               :alt="post.title"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/10 transition-colors duration-500"></div>
 
-            <div v-if="post.category"
+            <div v-if="post.meta?.category"
               class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 text-[9px] font-bold tracking-[0.2em] uppercase text-charcoal shadow-sm">
-              {{ post.category }}
+              {{ post.meta?.category }}
             </div>
           </div>
 
           <div class="p-8 flex flex-col flex-grow">
             <div class="flex items-center gap-4 text-charcoal/40 text-xs mb-4">
-              <div v-if="post.date" class="flex items-center gap-1.5">
+              <div v-if="post.meta?.date" class="flex items-center gap-1.5">
                 <Calendar class="w-3.5 h-3.5" />
-                <span>{{ post.date }}</span>
+                <span>{{ post.meta?.date }}</span>
               </div>
-              <div v-if="post.date && post.readTime" class="w-1 h-1 rounded-full bg-gold/50"></div>
-              <div v-if="post.readTime" class="flex items-center gap-1.5">
+              <div v-if="post.meta?.date && post.meta?.readTime" class="w-1 h-1 rounded-full bg-gold/50"></div>
+              <div v-if="post.meta?.readTime" class="flex items-center gap-1.5">
                 <Clock class="w-3.5 h-3.5" />
-                <span>{{ post.readTime }}</span>
+                <span>{{ post.meta?.readTime }}</span>
               </div>
             </div>
 
