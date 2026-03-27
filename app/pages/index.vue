@@ -1,10 +1,11 @@
 <script setup>
 const { data: posts } = await useAsyncData('home-posts', () =>
-  queryCollection('content').all().then(articles =>
-    articles
+  queryCollection('content').all().then(articles => {
+    console.log('ARTIGOS NO SERVIDOR:', articles.length, articles[0]) // 👈
+    return articles
       .sort((a, b) => new Date(b.dateSort) - new Date(a.dateSort))
       .slice(0, 3)
-  )
+  })
 )
 
 useHead({
@@ -39,6 +40,7 @@ useHead({
     }
   ]
 })
+console.log('POSTS RESULTADO:', posts.value) // 👈
 </script>
 
 <template>
