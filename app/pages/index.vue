@@ -22,7 +22,7 @@ useHead({
         "image": "https://yasminsantana.adv.br/images/yasmin-logo.png",
         "@id": "https://yasminsantana.adv.br",
         "url": "https://yasminsantana.adv.br",
-        "telephone": "+557192128914",
+        "telephone": "+5571992128914",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Camaçari",

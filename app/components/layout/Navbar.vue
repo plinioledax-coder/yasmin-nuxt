@@ -32,7 +32,7 @@ const menuItems = [
   { label: 'Contato', to: '/#contato' },
 ]
 
-const phone = '557192128914'
+const phone = '5571992128914'
 const message = encodeURIComponent('Olá Yasmin! Visitei seu site e gostaria de saber mais sobre seus serviços jurídicos.')
 const link = `https://wa.me/${phone}?text=${message}`
 </script>
