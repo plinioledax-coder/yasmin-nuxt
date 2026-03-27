@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     collections: {
       content: {
         type: 'page',
-        source: '**/*.md',
+      source: 'blog/**/*.md', // 👈 caminho explícito
       }
     }
   } as any),
