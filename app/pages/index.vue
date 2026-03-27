@@ -1,4 +1,12 @@
 <script setup>
+const { data: posts } = await useAsyncData('home-posts', () =>
+  queryCollection('content').all().then(articles =>
+    articles
+      .sort((a, b) => new Date(b.dateSort) - new Date(a.dateSort))
+      .slice(0, 3)
+  )
+)
+
 useHead({
   title: 'Yasmin Santana | Advocacia Humanizada e Estratégica',
   meta: [
@@ -39,7 +47,7 @@ useHead({
     <SectionsAbout />
     <SectionsServices />
     <SectionsTestimonials />
-    <SectionsBlog />
+    <SectionsBlog :posts="posts" />
     <SectionsContact />
   </div>
 </template>
