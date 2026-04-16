@@ -36,7 +36,7 @@ const link = `https://wa.me/${phone}?text=${message}`
           </p>
 
           <div class="inline-block px-4 py-2 border border-gold/20 text-[9px] font-bold tracking-[0.35em] uppercase text-gold/60">
-            OAB/BA Nº XXXXX
+            OAB/BA
           </div>
 
           <div class="flex items-center gap-3 pt-2">
