@@ -34,11 +34,7 @@ const link = `https://wa.me/${phone}?text=${message}`
           <p class="text-sm text-white/40 leading-relaxed max-w-xs mt-4">
             Advocacia humanizada com estratégia e excelência. Cada caso, uma história. Cada cliente, uma prioridade.
           </p>
-
-          <div class="inline-block px-4 py-2 border border-gold/20 text-[9px] font-bold tracking-[0.35em] uppercase text-gold/60">
-            OAB/BA
-          </div>
-
+          
           <div class="flex items-center gap-3 pt-2">
             <a href="https://instagram.com/yasminsantana_adv" target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center border border-white/10 text-white/50 hover:border-gold hover:text-gold transition-all duration-300">
