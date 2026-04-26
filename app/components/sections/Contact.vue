@@ -31,7 +31,7 @@ const handleSubmit = async () => {
   const finalSubject = form.value.subject === 'Outra' ? form.value.customSubject : form.value.subject
 
   try {
-    const response = await fetch('https://formspree.io/f/xdawqeaq', {
+    const response = await fetch('https://formspree.io/f/xojyzagn', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
