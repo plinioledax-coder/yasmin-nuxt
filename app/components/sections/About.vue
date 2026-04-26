@@ -7,11 +7,11 @@ const profile = {
   role: 'Advogada · OAB/BA',
   oab: 'OAB/BA Nº XXXXX',
   bio: [
-    'Olá! Sou a Yasmin, advogada apaixonada por justiça e pelo ser humano por trás de cada processo. Acredito que o Direito vai além das leis — é sobre proteger histórias reais.',
-    'Atuo com dedicação total ao cliente, oferecendo orientação clara, estratégica e sem juridiquês. Do primeiro contato até a resolução do caso, você nunca estará sozinho.',
-    'Para mim, cada cliente merece atenção individualizada e uma estratégia construída especialmente para seu caso. Porque no Direito, detalhes fazem toda a diferença.',
+    'O escritório Yasmin Santana Advocacia nasceu da crença de que o Direito vai além das leis. É sobre proteger histórias reais e as pessoas por trás de cada processo.',
+    'Com dedicação total ao cliente, o escritório oferece orientação clara, estratégica e sem juridiquês. Do primeiro contato até a resolução do caso, cada cliente conta com acompanhamento próximo e comprometido em todas as etapas.',
+    'A atuação do escritório é pautada pela atenção individualizada e por estratégias construídas especialmente para cada situação. Porque no Direito, detalhes fazem toda a diferença.',
   ],
-  quote: 'Defendo seus direitos com a mesma dedicação que eu defenderia os meus.',
+  quote: 'Defendemos seus direitos com a mesma dedicação que defenderíamos os nossos.',
   specialties: ['Direito Civil', 'Direito do Consumidor', 'Direito de Família', 'Direito Trabalhista', 'Contratos', 'Inventários'],
 }
 
