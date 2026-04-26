@@ -78,7 +78,7 @@ onMounted(() => {
               <div class="p-3 sm:p-4 backdrop-blur-md border border-gold/30" style="background: rgba(26,24,20,0.82);">
                 <p class="font-display text-white font-bold text-xs sm:text-sm tracking-widest uppercase">Yasmin Santana
                 </p>
-                <p class="text-gold text-[9px] sm:text-[10px] tracking-[0.3em] uppercase mt-1">Advogada · OAB/BA</p>
+                <p class="text-gold text-[9px] sm:text-[10px] tracking-[0.3em] uppercase mt-1">Advogada</p>
               </div>
             </div>
           </div>
@@ -133,11 +133,6 @@ onMounted(() => {
         <div
           class="pt-3 flex flex-wrap gap-x-5 gap-y-3 justify-center lg:justify-start items-center w-full border-t border-white/10 hero-item"
           :class="{ 'hero-item--visible': revealed }" style="--delay: 420ms">
-          <div
-            class="flex items-center gap-2 text-white/40 text-[10px] lg:text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
-            <Scale class="w-4 h-4 text-gold shrink-0" />
-            <span>OAB/BA</span>
-          </div>
           <div
             class="flex items-center gap-2 text-white/40 text-[10px] lg:text-xs tracking-widest uppercase hover:text-white/70 transition-colors duration-300 cursor-default">
             <ShieldCheck class="w-4 h-4 text-gold shrink-0" />
