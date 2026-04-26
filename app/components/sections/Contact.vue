@@ -128,7 +128,7 @@ const handleSubmit = async () => {
 
             <div class="pt-6 border-t border-white/10">
               <a
-                href="https://wa.me/5571992128914?text=Ol%C3%A1%20Yasmin%2C%20gostaria%20de%20agendar%20uma%20consulta%20e%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
+                href="https://wa.me/5571996558882?text=Ol%C3%A1%20Yasmin%2C%20gostaria%20de%20agendar%20uma%20consulta%20e%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
                 target="_blank"
                 class="group inline-flex items-center gap-3 text-gold hover:text-white transition-colors font-bold text-sm uppercase tracking-widest"
               >
