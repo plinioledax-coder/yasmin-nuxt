@@ -110,7 +110,7 @@ onMounted(() => {
         <p class="font-body text-white/55 text-base lg:text-lg leading-relaxed max-w-md hero-item text-center lg:text-left"
           :class="{ 'hero-item--visible': revealed }" style="--delay: 220ms">
           Atendimento jurídico personalizado, estratégico e humanizado.
-          Cada caso é único — e merece cuidado dedicado.
+          Cada caso é único e merece cuidado dedicado.
         </p>
 
         <div class="flex flex-row flex-wrap gap-3 pt-2 hero-item justify-center lg:justify-start w-full"
