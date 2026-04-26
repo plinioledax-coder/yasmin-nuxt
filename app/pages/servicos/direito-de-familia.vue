@@ -60,7 +60,7 @@ useHead({
 })
 
 
-const WHATSAPP_NUMBER = '5571992128914'
+const WHATSAPP_NUMBER = '5571996558882'
 const message = "Olá Yasmin! Visitei seu site e gostaria de saber mais sobre seus serviços jurídicos em Direito de Família.";
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
