@@ -121,7 +121,7 @@ const handleSubmit = async () => {
                 <Mail class="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <div>
                   <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-1">E-mail</h4>
-                  <p class="text-white/45 text-sm">contato@yasminsantana.adv.br</p>
+                  <p class="text-white/45 text-sm">yasminsantana.adv@hotmail.com</p>
                 </div>
               </div>
             </div>
