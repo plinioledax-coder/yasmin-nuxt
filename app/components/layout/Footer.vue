@@ -79,7 +79,7 @@ const link = `https://wa.me/${phone}?text=${message}`
             <li class="flex items-center gap-3">
               <MessageCircle class="w-4 h-4 text-gold/60 shrink-0" />
               <a :href="link" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">
-                (71) 9212-8914
+                (71) 99655-8882
               </a>
             </li>
           </ul>
