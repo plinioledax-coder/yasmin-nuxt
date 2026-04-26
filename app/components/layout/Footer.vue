@@ -72,7 +72,7 @@ const link = `https://wa.me/${phone}?text=${message}`
             </li>
             <li class="flex items-center gap-3">
               <Mail class="w-4 h-4 text-gold/60 shrink-0" />
-              <a href="mailto:contato@yasminsantana.adv.br" class="hover:text-gold transition-colors">
+              <a href="mailto:yasminsantana.adv@hotmail.com" class="hover:text-gold transition-colors">
                 contato@yasminsantana.adv.br
               </a>
             </li>
