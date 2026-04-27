@@ -4,22 +4,27 @@ import { Quote, Star, ArrowRight, BadgeCheck } from 'lucide-vue-next'
 const testimonials = [
   {
     id: 1,
-    text: 'A Yasmin foi incrivelmente competente e humana no meu processo de divórcio. Explicou tudo com clareza, me deixou tranquila em um momento muito difícil. O resultado foi além do que esperava.',
-    author: 'Fernanda Oliveira',
-    role: 'Processo de Divórcio',
+    text: 'Me faltam elogios para falar desta profissional.
+Uma advogada disposta a ir até o fim por uma causa.
+Alguém muito humana e empatica ao qual serei sempre grata.
+Age com muito profissionalismo e ética.
+Sem dúvidas ela me orientou e auxiliou demais no meu caso. Muito empenhada e atenciosa. Tive um retorno 100% positivo dentro do que esperávamos. E para quem estiver lendo este comentário, não tenha nem uma duvida em contratar os servicos dela
+É de grande valia e confiança.',
+    author: 'Maria Deodato',
+    role: 'Direito do Consumidor',
     image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&h=150&auto=format&fit=crop',
   },
   {
     id: 2,
-    text: 'Fui demitido sem justa causa e achei que não tinha saída. A Dra. Yasmin identificou todas as irregularidades e conseguiu um resultado excelente para mim. Profissional exemplar!',
-    author: 'Carlos Eduardo',
+    text: 'Excelente atendimento e profissionalismo! Orienta o cliente desde o primeiro contato, com explicações claras e muita transparência em todo o processo. Sinônimo de compromisso e transparência!',
+    author: 'Tereza Cruz',
     role: 'Ação Trabalhista',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&h=150&auto=format&fit=crop',
   },
   {
     id: 3,
-    text: 'Estava com o nome no SPC por uma cobrança indevida há anos. A Yasmin resolveu tudo rapidamente e ainda consegui uma indenização por danos morais. Recomendo demais!',
-    author: 'Mônica Reis',
+    text: 'Conheci a Dtra, por um outro advogado, então após levar a ela a minha demanda, com toda atenção ela me ouviu e prontamente me solicitou as provas, logo em seguida deu entrada na documentação, um ponto importante a se destacar, me manteve a par do processo o tempo todo, e sempre que tinha dúvidas, perguntava e ela sempre solicita em responder, profissionalismo enorme, muita transparência, indico muito os serviços dela.',
+    author: 'Diogo Santos',
     role: 'Direito do Consumidor',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&h=150&auto=format&fit=crop',
   },
