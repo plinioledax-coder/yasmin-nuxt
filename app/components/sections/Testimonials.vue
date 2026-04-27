@@ -14,14 +14,14 @@ const testimonials = [
     text: 'Excelente atendimento e profissionalismo! Orienta o cliente desde o primeiro contato, com explicações claras e muita transparência em todo o processo. Sinônimo de compromisso e transparência!',
     author: 'Tereza Cruz',
     role: 'Ação Trabalhista',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&h=150&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&h=150&auto=format&fit=crop',
   },
   {
     id: 3,
     text: 'Conheci a Dtra, por um outro advogado, então após levar a ela a minha demanda, com toda atenção ela me ouviu e prontamente me solicitou as provas, logo em seguida deu entrada na documentação, um ponto importante a se destacar, me manteve a par do processo o tempo todo, e sempre que tinha dúvidas, perguntava e ela sempre solicita em responder, profissionalismo enorme, muita transparência, indico muito os serviços dela.',
     author: 'Diogo Santos',
     role: 'Direito do Consumidor',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&h=150&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&h=150&auto=format&fit=crop',
   },
 ]
 </script>
