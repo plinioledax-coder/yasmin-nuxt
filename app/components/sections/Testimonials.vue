@@ -4,12 +4,7 @@ import { Quote, Star, ArrowRight, BadgeCheck } from 'lucide-vue-next'
 const testimonials = [
   {
     id: 1,
-    text: 'Me faltam elogios para falar desta profissional.
-Uma advogada disposta a ir até o fim por uma causa.
-Alguém muito humana e empatica ao qual serei sempre grata.
-Age com muito profissionalismo e ética.
-Sem dúvidas ela me orientou e auxiliou demais no meu caso. Muito empenhada e atenciosa. Tive um retorno 100% positivo dentro do que esperávamos. E para quem estiver lendo este comentário, não tenha nem uma duvida em contratar os servicos dela
-É de grande valia e confiança.',
+    text: 'Me faltam elogios para falar desta profissional. Uma advogada disposta a ir até o fim por uma causa. Alguém muito humana e empatica ao qual serei sempre grata. Age com muito profissionalismo e ética. Sem dúvidas ela me orientou e auxiliou demais no meu caso. Muito empenhada e atenciosa. Tive um retorno 100% positivo dentro do que esperávamos. E para quem estiver lendo este comentário, não tenha nem uma duvida em contratar os servicos dela. É de grande valia e confiança.',
     author: 'Maria Deodato',
     role: 'Direito do Consumidor',
     image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&h=150&auto=format&fit=crop',
