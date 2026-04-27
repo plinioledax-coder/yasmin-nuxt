@@ -1,7 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // @nuxtjs/sitemap DEVE vir antes do @nuxt/content
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/sitemap', '@nuxt/content'],
+  // Adicionado 'nuxt-gtag' à lista de módulos
+  modules: [
+    '@nuxtjs/tailwindcss', 
+    '@nuxt/image', 
+    '@nuxtjs/sitemap', 
+    '@nuxt/content', 
+    'nuxt-gtag'
+  ],
+
+  // Configuração do Google Analytics
+  gtag: {
+    id: 'G-DJE3Q155JB'
+  },
 
   nitro: {
     preset: 'vercel'
@@ -31,6 +42,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Yasmin Santana | Advocacia',
+      meta: [
+        { name: 'description', content: 'Escritório de Advocacia Yasmin Santana - Especialista em soluções jurídicas.' }
+      ],
       htmlAttrs: {
         lang: 'pt-BR'
       },
