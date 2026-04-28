@@ -84,18 +84,11 @@ useHead({
             "{{ item.text }}"
           </p>
 
-          <div class="flex items-center gap-4 pt-6 border-t border-charcoal/8 mt-auto">
-            <img
-              :src="item.image"
-              :alt="item.author"
-              class="w-12 h-12 rounded-full object-cover border-2 border-charcoal/10 group-hover:border-gold/40 transition-colors"
-            >
-            <div>
-              <p class="font-display text-sm text-charcoal font-bold tracking-wide">{{ item.author }}</p>
-              <span class="text-[10px] text-gold uppercase tracking-[0.2em] font-semibold block mt-0.5">
-                {{ item.role }}
-              </span>
-            </div>
+          <div class="pt-6 border-t border-charcoal/8 mt-auto">
+            <p class="font-display text-sm text-charcoal font-bold tracking-wide">{{ item.author }}</p>
+            <span class="text-[10px] text-gold uppercase tracking-[0.2em] font-semibold block mt-0.5">
+              {{ item.role }}
+            </span>
           </div>
         </div>
 
