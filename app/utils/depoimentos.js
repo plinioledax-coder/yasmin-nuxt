@@ -6,7 +6,6 @@ export const listaDepoimentos = [
     text: 'Conheci a Dra. por um outro advogado, então após levar a ela a minha demanda, com toda atenção ela me ouviu e prontamente me solicitou as provas, logo em seguida deu entrada na documentação. Um ponto importante a se destacar, me manteve atualizado de tudo.',
     author: 'Diogo Santos',
     role: 'Avaliação no Google',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&h=150&auto=format&fit=crop',
   },
   {
     id: 2,
