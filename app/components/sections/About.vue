@@ -78,8 +78,8 @@ onUnmounted(() => {
               <GraduationCap class="w-6 h-6" />
             </div>
             <div>
-              <p class="font-display font-bold text-sm tracking-widest uppercase text-white">Pós-Graduada</p>
-              <p class="text-[10px] text-gold/80 uppercase tracking-[0.2em] mt-1">Direito Civil</p>
+              <p class="font-display font-bold text-sm tracking-widest uppercase text-white">Especialista</p>
+              <p class="text-[10px] text-gold/80 uppercase tracking-[0.2em] mt-1">Em Direito do Consumidor e Bancário</p>
             </div>
           </div>
         </div>
