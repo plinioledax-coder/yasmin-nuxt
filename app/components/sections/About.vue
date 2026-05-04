@@ -12,7 +12,7 @@ const profile = {
     'A atuação do escritório é pautada pela atenção individualizada e por estratégias construídas especialmente para cada situação. Porque no Direito, detalhes fazem toda a diferença.',
   ],
   quote: 'Defendemos seus direitos com a mesma dedicação que defenderíamos os nossos.',
-  specialties: ['Direito do Consumidor', 'Direito Bancário', 'Direito de Família', 'Direito Trabalhista', 'Direito Civil', 'Inventários'],
+  specialties: ['Direito do Consumidor', 'Direito Bancário', 'Direito de Família', 'Direito Civil'],
 }
 
 // --- Scroll Reveal Logic ---
